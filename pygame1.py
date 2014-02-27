@@ -50,7 +50,7 @@ class square:
 class block:
     def __init__(self, x):
         self.w = random.randint(10,25)
-        self.h = random.randint(10,70)
+        self.h = random.randint(10,150)
         self.x = x
         self.y = 245 - self.h
         self.done = False
@@ -100,6 +100,7 @@ while True:
         bl = [block(640)]
         player = square(315,235)
         pygame.time.set_timer(ADDBLOCK, 1000)
+	SCORE = 0
         RUNNING = True
 
     if(RUNNING):
